@@ -152,7 +152,7 @@ function DrawElementDb(Dblist) {
 
         AddBtn(btnWifi, ventanaEmergente3);
         RemoveWindow(cerrarBtn3, ventanaEmergente3);
-
+    // Asignamos el contenido a los elementos de la lita
         contenedor.appendChild(TitleArticle);
         contenedor.appendChild(btneat);
         contenedor.appendChild(btnWifi);
@@ -162,7 +162,7 @@ function DrawElementDb(Dblist) {
         contenedor.appendChild(btnActiviti);
         contenedor.appendChild(Tiresultado),
         item.appendChild(contenedor);
-        // Asignamos el contenido al elemento de lista
+       
 
 
         // Añadimos el elemento de lista a la lista <ul>
