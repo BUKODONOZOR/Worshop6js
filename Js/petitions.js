@@ -78,6 +78,12 @@ function DrawElementDb(Dblist) {
         TitleArticle.style.textAlign = "center";
         TitleArticle.textContent = articulo.travelname;
 
+        var Tiresultado = document.createElement("p");
+        Tiresultado.style.textAlign = "center";
+        Tiresultado.style.color = "red";
+        Tiresultado.textContent = articulo.travelname +" " + " " + articulo.presupuesto + " " + articulo.muerto;
+
+
         var btneat = document.createElement("button");
         btneat.style.width = "100px";
         btneat.style.height = "50px";
@@ -154,6 +160,7 @@ function DrawElementDb(Dblist) {
         contenedor.appendChild(btnTraductor);
         contenedor.appendChild(btnPiedra);
         contenedor.appendChild(btnActiviti);
+        contenedor.appendChild(Tiresultado),
         item.appendChild(contenedor);
         // Asignamos el contenido al elemento de lista
 
@@ -422,7 +429,7 @@ function binarioAString(binario) {
     // Convertir el número binario a decimal
     const decimal = parseInt(binario, 2);
     
-    // Convertir el decimal a su equivalente en carácter ASCII
+    // Convertir el decimal a su equivalente en carácteres ACCI
     const caracter = String.fromCharCode(decimal);
     
     return caracter;
