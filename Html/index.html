@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/styles.css">
+</head>
+<body>
+    <main class="main">
+        <header class="header_sectiom">
+            
+            <article class="container_logo">
+                <img src="/img/Fly bird logo (1)-Photoroom.png-Photoroom.png" alt=""  class="logo_img">
+                <h2 class="Title_logo">ENSIGNIA</h2>
+            </article>
+            <article class="container_navbar">
+                <ul class="navbar_list">
+                    <li class="element_list">
+                        <a href="">Viajes</a>
+                    </li>
+                    <li class="element_list">
+                        <a href="">Alertas</a>
+                    </li>
+                    <li class="element_list">
+                        <a href="">Sin notificar</a>
+                    </li>
+                </ul>
+            </article>
+            
+
+
+
+        </header>
+
+        <section class="section-list-travels">
+            <article class="container-travels">
+                <ul id="lista-articulos">
+                    
+                </ul>
+            </article>
+        </section>
+
+        <section class="btn-section">
+            <article class="container_logo">
+                <button id="mostrarBtn" class="Add_btn">+</button>
+            </article>
+        </section>
+
+        <section id="ventanaEmergente" class="ventana-emergente">
+            <div class="contenido">
+                <h3 class="Title_from">Agregar viaje</h3>
+                <form id="formulario_travel" action="" class="formulario_travel">
+                    <input id="NameNewTravel" type="text" placeholder="Nombre">
+                    <input id="PrsupuestNewTravel" type="number" placeholder="Presupuesto">
+                    <textarea name="" id="DescriptionNewTravel" cols="30" rows="10" placeholder="Descrption"></textarea>
+                    <input id="DateNewTravelI" type="date">
+                    <input  id="DateNewTravelF" type="date">
+
+                    <button type="submit" id="BtnSumit"> S</button>
+                </form>
+              <button id="cerrarBtn">Cerrar</button>
+            </div>
+        </section>
+
+        <section id="ventanaEmergente1" class="ventana-emergente">
+            <div class="contenido">
+                <h3 class="Title_from">Agregar Comida</h3>
+
+                <form action="" id="formulario_eat">
+                    <select name="" id="opciones">
+                        <option value="1">ComboAlmohabana</option>
+                        <option value="2">ComboSubway</option>
+
+                    </select>
+                    <button type="button" onclick="capturarSeleccion()">Capturar selección</button>
+
+                </form>
+
+              <button id="cerrarBtn1">Cerrar</button>
+            </div>
+        </section>
+
+        <section id="ventanaEmergente2" class="ventana-emergente">
+            <div class="contenido">
+                <h3 class="Title_from">Agregar Comida</h3>
+
+                <form action="" id="formulario_maleta">
+                    <input id="maletaAl" type="number" placeholder="Alto cm">
+                    <input id="maletaAn" type="number" placeholder="ancho cm">
+
+                    <button type="button" onclick="capturarTamaño()">Capturar selección</button>
+                    <br>
+                    <br>
+                    <span id="SpanMaleta"></span>
+
+
+                </form>
+
+              <button id="cerrarBtn2">Cerrar</button>
+            </div>
+        </section>
+
+        <section id="ventanaEmergente3" class="ventana-emergente">
+            <div class="contenido">
+                <h3 class="Title_from">Agregar Comida</h3>
+
+                <form action="" id="formulario_maleta">
+                    <input id="horasWifi" type="number" placeholder="Horas que piensa quedarse">
+                    <input id="binarioWifi" type="number" placeholder="Contraseña a decifrar">
+
+                    <button type="button" onclick="capturarContraseña()">Capturar Wifi</button>
+                    <br>
+                    <br>
+                    <span id="SpanContraseña"></span>
+
+
+                </form>
+
+              <button id="cerrarBtn3">Cerrar</button>
+            </div>
+        </section>
+
+        <section id="ventanaEmergente4" class="ventana-emergente">
+            <div class="contenido">
+                <h3 class="Title_from">Agregar Comida</h3>
+
+                <form action="" id="formulario_maleta">
+                    <input id="MensajeAtraducir" type="text" placeholder="Horas que piensa quedarse">
+                    
+
+                    <button type="button" onclick="traslate()">Traducir</button>
+                    <br>
+                    <br>
+                    <span id="SpanTraductor"></span>
+
+
+                </form>
+
+              <button id="cerrarBtn4">Cerrar</button>
+            </div>
+        </section>
+        <section id="ventanaEmergente5" class="ventana-emergente">
+            <div class="contenido">
+                <h3 class="Title_from">Agregar duelo</h3>
+
+                <form action="" id="formulario_maleta">
+                    <input id="DueloOp" type="number" placeholder="1.Piedra .2 tijera .3 papel">
+                    
+
+                    <button type="button" onclick="ejectionDuel()">Duelo</button>
+                    <br>
+                    <br>
+                    <span id="SpanTraductor"></span>
+
+
+                </form>
+
+              <button id="cerrarBtn5">Cerrar</button>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/Js/petitions.js"></script>
+</body>
+</html>

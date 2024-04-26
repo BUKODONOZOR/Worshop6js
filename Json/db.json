@@ -1,0 +1,23 @@
+{
+  "Hilberto": [
+    {
+      "id": "1",
+      "travelname": "Macondo 2",
+      "presupuesto": 2064999,
+      "description": "",
+      "fechaI": "",
+      "fechaF": "",
+      "comidas": [],
+      "muerto": false
+    },
+    {
+      "id": "6da1",
+      "travelname": "Macondo 2",
+      "presupuesto": "2500000",
+      "description": "",
+      "fechaI": "",
+      "fechaF": "",
+      "comidas": []
+    }
+  ]
+}
